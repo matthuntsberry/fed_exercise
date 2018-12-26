@@ -1,3 +1,70 @@
-.header__logo {
-  width: 25px;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: $xs-size 0 0 $m-size;
+  background-color: $blue-gray;
+  color: $text-white;
+  font-size: 1.4rem;
+  
+  &__logo {
+    width: 30px;
+  }
+  
+  &__title {
+    display: inline;
+    margin: 0;
+    color: $text-white;
+  }
+}
+
+.branding {
+  display: flex;
+  align-items: center; /* align vertical */
+}
+
+.nav {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: $m-size;
+    list-style-type: none;
+  }
+  
+  &__item {
+    display: inline;
+    padding-right: $l-size;
+
+  }
+
+  &__item--search {
+    width: 20px;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  
+  .hamburger {
+    display: inline-block;
+  }
+  //CSS
+  
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .nav__item {
+    padding-right: $s-size;
+  }
+  //CSS
+  
 }

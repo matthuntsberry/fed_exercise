@@ -14,11 +14,41 @@
 </head>
 
 <body>
-  <header>
-    <a href="#">
-      <img src="images/logo-autosales.svg"
-        alt="Icon of a car"
-        class="header__logo">
-      <h4>AutoSales.com</h4>
-    </a>
+  <header class="header">
+    <div class="branding">
+      <a href="#">
+        <img src="images/logo-autosales.svg"
+          alt="Icon of a car"
+          class="header__logo">
+      </a>
+      <h4 class="header__title">AutoSales.com</h4>
+    </div>
+
+    <nav class="hamburger">
+      <label for="nav-toggle"
+        class="nav-toggle-label"><span></span></label>
+      <input type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle">
+      <ul class="menu">
+        <li><a href="#">Cars for Sale</a></li>
+        <li><a href="#">Sell My Car</a></li>
+        <li><a href="#">Find a Dealer</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav">
+      <ul class="nav__content">
+        <li class="nav__item">Cars for Sale</li>
+        <li class="nav__item">Sell My Car</li>
+        <li class="nav__item">Find a Dealer</li>
+        <li class="nav__item">Contact Us</li>
+        <li class="nav__item">
+          <img src="images/icon-search-white.svg"
+            alt="Search Glass Icon"
+            class="nav__item--search">
+        </li>
+      </ul>
+    </nav>
   </header>

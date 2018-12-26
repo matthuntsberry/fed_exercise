@@ -32,5 +32,114 @@ button:disabled {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px); }
 
-.header__logo {
-  width: 25px; }
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 0 0 2rem;
+  background-color: #3e4852;
+  color: #f2f2f2;
+  font-size: 1.4rem; }
+  .header__logo {
+    width: 30px; }
+  .header__title {
+    display: inline;
+    margin: 0;
+    color: #f2f2f2; }
+
+.branding {
+  display: flex;
+  align-items: center;
+  /* align vertical */ }
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  padding-right: 2rem;
+  list-style-type: none; }
+
+.nav__item {
+  display: inline;
+  padding-right: 3rem; }
+
+.nav__item--search {
+  width: 20px; }
+
+.hamburger {
+  display: none; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none; }
+  .hamburger {
+    display: inline-block; } }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .nav__item {
+    padding-right: 1rem; } }
+
+.nav-toggle {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+  .nav-toggle:checked + .menu {
+    visibility: visible;
+    opacity: 1; }
+
+.nav-toggle-label {
+  position: fixed;
+  z-index: 2;
+  top: 1rem;
+  right: .75rem;
+  cursor: pointer; }
+  .nav-toggle-label span, .nav-toggle-label::before, .nav-toggle-label::after {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    margin-bottom: .4rem;
+    transition: all linear .2s;
+    background-color: #fff; }
+  .nav-toggle-label::before, .nav-toggle-label::after {
+    content: ''; }
+
+.menu {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  list-style-type: none;
+  transition: .2s all linear;
+  opacity: 0;
+  background-color: rgba(62, 72, 82, 0.5);
+  font-size: 2rem;
+  text-align: center; }
+  .menu li {
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .menu li a {
+      border-bottom: 2px solid #000;
+      color: #000;
+      text-decoration: none; }
+
+.nav-toggle-label--active span {
+  opacity: 0; }
+
+.nav-toggle-label--active::before {
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg); }
+
+.nav-toggle-label--active::after {
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg); }

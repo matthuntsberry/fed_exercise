@@ -1,5 +1,10 @@
+// Base
 @import 'base/base';
-@import 'base/settings';
+
+// Abstracts
+@import 'abstracts/settings';
 
 // Components
-@import './components/header'
+@import './components/header';
+@import './components/hamburger';
+

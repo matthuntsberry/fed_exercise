@@ -1,3 +1,4 @@
+// Add and Remove class to show animation of hamburger menu
 document.addEventListener('DOMContentLoaded', () => {
 	let checkbox = document.querySelector('.nav-toggle');
 	let checkboxLabel = document.querySelector('.nav-toggle-label');

@@ -1,5 +1,6 @@
 // Base
 @import 'base/base';
+@import 'base/animations';
 
 // Abstracts
 @import 'abstracts/settings';
@@ -7,4 +8,6 @@
 // Components
 @import './components/header';
 @import './components/hamburger';
+@import './components/jumbotron';
+@import './components/buttons';
 

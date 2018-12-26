@@ -1,0 +1,38 @@
+.jumbotron {
+  position: relative;
+  height: 50vh;
+  background-image: url('/images/dream_car_2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.heading-primary {
+  margin: 0;
+  color: $blue-gray;
+  font-size: $xl-size;
+  font-weight: 900;
+  
+  &--main {
+    display: block;
+    animation: moveInLeft 1.5s ease-out;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  &--sub {
+    display: block;
+    margin-bottom: $m-size;
+    animation: moveInRight 1.5s ease-out;
+    font-size: $font-medium;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}

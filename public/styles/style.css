@@ -67,7 +67,7 @@ button:disabled {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   padding: 0.5rem 0 0 2rem;
   background-color: #3e4852;
   color: #f2f2f2;
@@ -108,10 +108,6 @@ button:disabled {
     display: none; }
   .hamburger {
     display: inline-block; } }
-
-@media (min-width: 767px) and (max-width: 1024px) {
-  .nav__item {
-    padding-right: 1rem; } }
 
 .nav-toggle {
   position: absolute;
@@ -233,7 +229,6 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3rem 4rem;
   transition: all 0.2s;
   background-color: #ff8466;
   text-align: center; }
@@ -262,11 +257,17 @@ button:disabled {
   animation: moveInBottom 1.5s ease-out 0.25s;
   animation-fill-mode: backwards; }
 
+@media (min-width: 320px) and (max-width: 640px) {
+  .btn--pink {
+    display: grid;
+    grid-column: 1 / 4;
+    padding: 1rem 4rem; } }
+
 /* The container must be positioned relative: */
 .custom-select {
   display: inline-block;
   position: relative;
-  min-width: 200px;
+  max-width: 200px;
   border-top: 1px solid #3e4852;
   color: #3e4852;
   font-family: Arial; }
@@ -337,11 +338,29 @@ button:disabled {
 .dream-car {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 10rem;
+  padding: 3rem 0.5rem;
   background-color: #fff; }
+
+@media (min-width: 640px) {
+  .dream-car {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 10rem;
+    background-color: #fff; } }
+
+@media (min-width: 900px) {
+  .dream-car {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 20rem;
+    background-color: #fff; } }
 
 .product-display {
   display: grid;
@@ -370,6 +389,6 @@ button:disabled {
 
 .product-display__images img {
   justify-content: center;
-  width: 40%;
+  max-width: 40%;
   height: auto;
   padding: 1rem; }

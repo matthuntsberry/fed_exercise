@@ -35,7 +35,7 @@
 
 .product-display__images img {
   justify-content: center;
-  width: 40%;
+  max-width: 40%;
   height: auto;
   padding: $s-size;
 }

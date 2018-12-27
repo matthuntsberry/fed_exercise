@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   padding: $xs-size 0 0 $m-size;
   background-color: $blue-gray;
   color: $text-white;
@@ -57,12 +57,4 @@
   .hamburger {
     display: inline-block;
   }  
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
-  .nav__item {
-    padding-right: $s-size;
-  }
-  //CSS
-  
 }

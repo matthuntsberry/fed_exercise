@@ -19,11 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .3rem $xl-size;
     transition: all 0.2s;
     background-color: $salmon;
-    text-align: center;
-    
+    text-align: center; 
   }
   
   &--blue {
@@ -58,6 +56,27 @@
     animation-fill-mode: backwards;
   }
 }
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .btn--pink {
+    display: grid;
+    grid-column: 1 / 4;
+    padding: $s-size $xl-size;
+  }
+}
+
+// @media (min-width: 640px) {
+//   .btn__pink {
+//     align-items: center;
+//     justify-content: center;
+//     // padding: $s-size $xl-size;
+//     transition: all 0.2s;
+//     background-color: $salmon;
+//     text-align: center; 
+//   }
+// }
+
+
 
 
 

@@ -1,9 +1,31 @@
 .dream-car {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   margin: 0 auto;
-  padding: $l-size 10rem;
+  padding: $l-size $xs-size;
   background-color: #fff;
+}
+
+@media (min-width: 640px) {
+  .dream-car {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: $l-size 10rem;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 900px) {
+  .dream-car {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: $l-size 20rem;
+    background-color: #fff;
+  }
 }

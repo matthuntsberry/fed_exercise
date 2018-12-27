@@ -2,7 +2,7 @@
 .custom-select {
   display: inline-block;
   position: relative;
-  min-width: 200px;
+  max-width: 200px;
   border-top: 1px solid $blue-gray;
   color: $blue-gray;
   font-family: Arial;

@@ -1,5 +1,6 @@
 .jumbotron {
   position: relative;
+  // z-index: -1;
   height: 50vh;
   background-image: url('/images/dream_car_2.jpg');
   background-repeat: no-repeat;
@@ -9,7 +10,8 @@
   &__text-box {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 60%;
+    width: 100%;
     transform: translate(-50%, -50%);
   }
 }
@@ -17,7 +19,7 @@
 .heading-primary {
   margin: 0;
   color: $blue-gray;
-  font-size: $xl-size;
+  font-size: 2.2rem;
   font-weight: 900;
   
   &--main {
@@ -35,4 +37,20 @@
     font-size: inherit;
     font-weight: inherit;
   }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .heading-primary {
+    font-size: 3vw;
+  }
+  //CSS
+  
+}
+
+@media (min-width: 1024px) {
+  .heading-primary {
+    font-size: 2vw;
+  }
+  //CSS
+  
 }

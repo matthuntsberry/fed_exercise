@@ -1,0 +1,8 @@
+.dream-car {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  padding: $l-size;
+}

@@ -1,0 +1,66 @@
+/* The container must be positioned relative: */
+.custom-select {
+  display: inline-block;
+  position: relative;
+  min-width: 200px;
+  border-top: 1px solid $blue-gray;
+  color: $blue-gray;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: $white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: $blue-gray transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+  top: 7px;
+  border-color: transparent transparent $blue-gray;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-color: $blue-gray;
+  color: $blue-gray;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  // z-index: 99;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

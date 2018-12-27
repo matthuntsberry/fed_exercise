@@ -1,19 +1,29 @@
 .btn {
   &:link,
   &:visited {
-    border-radius: 3px;
-    font-size: $default-font;
+    font-size: 1.2rem;
     text-decoration: none;
-    text-transform: uppercase;
   }
-
+  
   &--green {
     display: inline-block;
     position: relative;
-    padding: $s-size-half-step $xl-size;
+    padding: $s-size $l-size;
     transition: all 0.2s;
+    border-radius: 3px;
     background-color: $green;
-
+    
+  }
+  
+  &--pink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem $xl-size;
+    transition: all 0.2s;
+    background-color: $salmon;
+    text-align: center;
+    
   }
 
   &:hover {

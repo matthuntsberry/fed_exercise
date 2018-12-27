@@ -1,3 +1,88 @@
 <% include partials/header %>
 
+<header class="header">
+  <div class="branding">
+    <a href="#">
+      <img src="images/logo-autosales.svg"
+        alt="Icon of a car"
+        class="header__logo">
+    </a>
+    <h4 class="header__title"><a href="#">AutoSales.com</a></h4>
+  </div>
+
+  <!-- Hamburger menu for mobile / tablet -->
+  <nav class="hamburger">
+    <label for="nav-toggle"
+      class="nav-toggle-label"><span></span></label>
+    <input type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle">
+    <ul class="menu">
+      <li><a href="#">Cars for Sale</a></li>
+      <li><a href="#">Sell My Car</a></li>
+      <li><a href="#">Find a Dealer</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Regular listed navbar -->
+  <nav class="nav">
+    <ul class="nav__content">
+      <li class="nav__item"><a href="#">Cars for Sale</a></li>
+      <li class="nav__item"><a href="#">Sell My Car</a></li>
+      <li class="nav__item"><a href="#">Find a Dealer</a></li>
+      <li class="nav__item"><a href="#">Contact Us</a></li>
+      <li class="nav__item">
+        <img src="images/icon-search-white.svg"
+          alt="Search Glass Icon"
+          class="nav__item--search">
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="jumbotron">
+    <div class="jumbotron__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">The Car of Your Dreams</span>
+        <span class="heading-primary--sub">is Only a Click Away!</span>
+      </h1>
+      <a href="#"
+        class="btn btn--green btn--animated">Get Started Now</a>
+    </div>
+  </section>
+  <section class="dream-car">
+    <div class="custom-select">
+      <select>
+        <option value="0">MAKE</option>
+        <option value="1">Audi</option>
+        <option value="2">BMW</option>
+        <option value="3">Citroen</option>
+        <option value="4">Ford</option>
+      </select>
+    </div>
+    <div class="custom-select">
+      <select>
+        <option value="0">MAKE</option>
+        <option value="1">Audi</option>
+        <option value="2">BMW</option>
+        <option value="3">Citroen</option>
+        <option value="4">Ford</option>
+      </select>
+    </div>
+    <div class="custom-select">
+      <select>
+        <option value="0">MAKE</option>
+        <option value="1">Audi</option>
+        <option value="2">BMW</option>
+        <option value="3">Citroen</option>
+        <option value="4">Ford</option>
+      </select>
+    </div>
+    <a href="#"
+      class="btn btn--pink btn--animated">Get Started Now</a>
+
+  </section>
+</main>
+
 <% include partials/footer %>

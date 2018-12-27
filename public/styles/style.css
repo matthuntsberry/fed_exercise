@@ -16,7 +16,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   color: #f2f2f2;
   font-size: 1rem; }
 
@@ -120,7 +121,7 @@ button:disabled {
 
 .nav-toggle-label {
   position: fixed;
-  z-index: 2;
+  z-index: 9;
   top: 1rem;
   right: .75rem;
   cursor: pointer; }
@@ -185,13 +186,14 @@ button:disabled {
   .jumbotron__text-box {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 60%;
+    width: 100%;
     transform: translate(-50%, -50%); }
 
 .heading-primary {
   margin: 0;
   color: #3e4852;
-  font-size: 4rem;
+  font-size: 2.2rem;
   font-weight: 900; }
   .heading-primary--main {
     display: block;
@@ -206,18 +208,34 @@ button:disabled {
     font-size: inherit;
     font-weight: inherit; }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .heading-primary {
+    font-size: 3vw; } }
+
+@media (min-width: 1024px) {
+  .heading-primary {
+    font-size: 2vw; } }
+
 .btn:link, .btn:visited {
-  border-radius: 3px;
-  font-size: 1.6rem;
-  text-decoration: none;
-  text-transform: uppercase; }
+  font-size: 1.2rem;
+  text-decoration: none; }
 
 .btn--green {
   display: inline-block;
   position: relative;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   transition: all 0.2s;
+  border-radius: 3px;
   background-color: #5ebf7f; }
+
+.btn--pink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 4rem;
+  transition: all 0.2s;
+  background-color: #ff8466;
+  text-align: center; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -233,3 +251,69 @@ button:disabled {
 .btn--animated {
   animation: moveInBottom 1.5s ease-out 0.25s;
   animation-fill-mode: backwards; }
+
+/* The container must be positioned relative: */
+.custom-select {
+  display: inline-block;
+  position: relative;
+  min-width: 200px;
+  border-top: 1px solid #3e4852;
+  color: #3e4852;
+  font-family: Arial; }
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element: */ }
+
+.select-selected {
+  background-color: #fff; }
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #3e4852 transparent transparent; }
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+  top: 7px;
+  border-color: transparent transparent #3e4852; }
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-color: #3e4852;
+  color: #3e4852;
+  cursor: pointer; }
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: #fff; }
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none; }
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.dream-car {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem; }

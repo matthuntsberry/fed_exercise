@@ -25,6 +25,17 @@
     text-align: center;
     
   }
+  
+  &--blue {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: $s-size;
+    transition: all 0.2s;
+    background-color: #a2e1f5;
+    text-align: center;
+    
+  }
 
   &:hover {
     transform: translateY(-3px);

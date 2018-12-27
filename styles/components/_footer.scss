@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: $blue-gray;
+  color: $text-white;
+  font-size: 1.4rem;
+
+  &__branding {
+    padding-left: $m-size;
+  }
+  
+  &__trademark {
+    margin: 0;
+    padding-right: $m-size;
+    
+  }
+}

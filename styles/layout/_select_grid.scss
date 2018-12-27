@@ -2,7 +2,8 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: $l-size;
+  padding: $l-size 10rem;
+  background-color: #fff;
 }

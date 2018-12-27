@@ -11,7 +11,9 @@
 @import './components/jumbotron';
 @import './components/buttons';
 @import './components/select';
+@import './components/footer';
 
 
 // Layout
-@import './layout/select_grid'
+@import './layout/select_grid';
+@import './layout/product_display';

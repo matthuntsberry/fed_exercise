@@ -18,6 +18,7 @@ html {
 body {
   max-width: 1280px;
   margin: 0 auto;
+  background-color: #dedede;
   color: #f2f2f2;
   font-size: 1rem; }
 
@@ -237,6 +238,15 @@ button:disabled {
   background-color: #ff8466;
   text-align: center; }
 
+.btn--blue {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: all 0.2s;
+  background-color: #a2e1f5;
+  text-align: center; }
+
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -310,10 +320,56 @@ button:disabled {
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #3e4852;
+  color: #f2f2f2;
+  font-size: 1.4rem; }
+  .footer__branding {
+    padding-left: 2rem; }
+  .footer__trademark {
+    margin: 0;
+    padding-right: 2rem; }
+
 .dream-car {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 3rem; }
+  padding: 3rem 10rem;
+  background-color: #fff; }
+
+.product-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 3rem;
+  background-color: #f0f3f4; }
+
+.product-display:nth-child(even) {
+  background-color: #fff; }
+
+.product-display__details {
+  width: 60%;
+  margin: 0 auto;
+  color: #010; }
+  .product-display__details .product__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400; }
+  .product-display__details .product__content {
+    margin-top: 0;
+    font-size: 1.2rem; }
+
+.product-display__images {
+  text-align: center; }
+
+.product-display__images img {
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  padding: 1rem; }

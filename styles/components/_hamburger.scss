@@ -10,7 +10,7 @@
 
 .nav-toggle-label {
   position: fixed;
-  z-index: 9;
+  // z-index: 9;
   top: 1rem;
   right: .75rem;
   cursor: pointer;
@@ -36,6 +36,7 @@
   display: flex;
   visibility: hidden;
   position: fixed;
+  z-index: 9;
   top: 0;
   right: 0;
   bottom: 0;
@@ -48,7 +49,7 @@
   list-style-type: none;
   transition: .2s all linear;
   opacity: 0;
-  background-color: rgba($blue-gray, .5);
+  background-color: rgba($blue-gray, .8);
   font-size: 2rem;
   text-align: center;
 
@@ -56,12 +57,24 @@
     margin-bottom: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
+    display: inline-block;
     
     a {
-      border-bottom: 2px solid #000;
-      color: #000;
+      transition: all ease 0.8s;
+      animation: moveInRight 1.5s ease-out;
+      animation-delay: -1s;
+      border-bottom: 2px solid $text-white;
+      color: $text-white;
       text-decoration: none;
+
     }
+    
+    a:hover {
+      padding: $m-size;
+      box-shadow: inset 200px 0 0 0 #e0e0e0;
+      color: $black;
+  }
+    
   }
 }
 

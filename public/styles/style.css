@@ -238,6 +238,9 @@ button:disabled {
   background-color: #5ebf7f;
   font-weight: 400; }
 
+.btn--green:hover {
+  background-color: #67d08b; }
+
 .btn--pink {
   display: flex;
   align-items: center;
@@ -246,6 +249,9 @@ button:disabled {
   background-color: #ff8466;
   font-weight: 400;
   text-align: center; }
+
+.btn--pink:hover {
+  background-color: #ff9980; }
 
 .btn--blue {
   display: inline-block;

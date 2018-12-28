@@ -11,10 +11,12 @@
     padding: $s-size $l-size;
     transition: all 0.2s;
     border-radius: 3px;
-    background-color: $green;
+    background-color: $dark-green;
     font-weight: 400;
+  }
 
-    
+  &--green:hover {
+    background-color: $light-green;
   }
   
   &--pink {
@@ -22,9 +24,13 @@
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    background-color: $salmon;
+    background-color: $dark-salmon;
     font-weight: 400;
     text-align: center;
+  }
+
+  &--pink:hover {
+    background-color: lighten($color: $dark-salmon, $amount: 5);
   }
   
   &--blue {

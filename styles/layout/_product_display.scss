@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
-  padding: $l-size;
+  padding: $l-size $s-size;
   background-color: #f0f3f4;
 }
 
@@ -19,8 +19,7 @@
   .product__title {
     margin-bottom: $s-size;
     font-size: 2rem;
-    font-weight: 400;
-
+    font-weight: 600;
   }
   
   .product__content {
@@ -31,7 +30,12 @@
 
 .product-display__images {
   display: none;
-  text-align: center;
+  text-align: right;
+}
+
+.product-display__images:nth-child(even) {  
+  text-align: left;
+
 }
 
 .product-display__images img {
@@ -47,7 +51,6 @@
   }
 
   .product-display__images {
-    // text-align: center;
     display: inline-block;
 
   } 

@@ -3,8 +3,8 @@
   display: inline-block;
   position: relative;
   max-width: 200px;
-  border-top: 1px solid $blue-gray;
-  color: $blue-gray;
+  border-top: 1px solid #e7e9ea;
+  color: $faint-blue;
   font-family: Arial;
 }
 
@@ -25,13 +25,13 @@
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: $blue-gray transparent transparent;
+  border-color: $faint-blue transparent transparent;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active::after {
   top: 7px;
-  border-color: transparent transparent $blue-gray;
+  border-color: transparent transparent $faint-blue;
 }
 
 /* style the items (options), including the selected item: */
@@ -40,7 +40,7 @@
   padding: 8px 16px;
   border: 1px solid transparent;
   border-top: none;
-  border-color: $blue-gray;
+  border-color: $faint-blue;
   color: $blue-gray;
   cursor: pointer;
 }

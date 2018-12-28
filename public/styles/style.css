@@ -78,27 +78,30 @@ button:disabled {
     display: inline;
     margin: 0;
     color: #f2f2f2; }
+    .header__title a {
+      padding-left: 2px;
+      font-weight: 400; }
 
 .branding {
   display: flex;
   align-items: center;
   /* align vertical */ }
 
-.nav__content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  padding-right: 2rem;
-  list-style-type: none; }
-
-.nav__item {
-  display: inline;
-  padding-right: 3rem; }
-
-.nav__item--search {
-  width: 20px; }
+.nav {
+  font-size: 1rem; }
+  .nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 2rem;
+    list-style-type: none; }
+  .nav__item {
+    display: inline;
+    padding-right: 3rem; }
+  .nav__item--search {
+    width: 20px; }
 
 .hamburger {
   display: none; }
@@ -199,7 +202,8 @@ button:disabled {
   margin: 0;
   color: #3e4852;
   font-size: 2.2rem;
-  font-weight: 900; }
+  font-weight: bold;
+  line-height: 1.6; }
   .heading-primary--main {
     display: block;
     animation: moveInLeft 1.5s ease-out;
@@ -207,7 +211,7 @@ button:disabled {
     font-weight: inherit; }
   .heading-primary--sub {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: moveInRight 1.5s ease-out;
     font-size: 2rem;
     font-size: inherit;
@@ -231,7 +235,8 @@ button:disabled {
   padding: 1rem 3rem;
   transition: all 0.2s;
   border-radius: 3px;
-  background-color: #5ebf7f; }
+  background-color: #5ebf7f;
+  font-weight: 400; }
 
 .btn--pink {
   display: flex;
@@ -239,6 +244,7 @@ button:disabled {
   justify-content: center;
   transition: all 0.2s;
   background-color: #ff8466;
+  font-weight: 400;
   text-align: center; }
 
 .btn--blue {
@@ -247,8 +253,11 @@ button:disabled {
   justify-content: center;
   padding: 1rem 2rem;
   transition: all 0.2s;
-  background-color: #a2e1f5;
+  background-color: #6ec2e3;
   text-align: center; }
+
+.btn--blue:hover {
+  background-color: #7bd2f2; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -276,8 +285,8 @@ button:disabled {
   display: inline-block;
   position: relative;
   max-width: 200px;
-  border-top: 1px solid #3e4852;
-  color: #3e4852;
+  border-top: 1px solid #e7e9ea;
+  color: #e7e9ea;
   font-family: Arial; }
 
 .custom-select select {
@@ -296,12 +305,12 @@ button:disabled {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #3e4852 transparent transparent; }
+  border-color: #e7e9ea transparent transparent; }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active::after {
   top: 7px;
-  border-color: transparent transparent #3e4852; }
+  border-color: transparent transparent #e7e9ea; }
 
 /* style the items (options), including the selected item: */
 .select-items div,
@@ -309,7 +318,7 @@ button:disabled {
   padding: 8px 16px;
   border: 1px solid transparent;
   border-top: none;
-  border-color: #3e4852;
+  border-color: #e7e9ea;
   color: #3e4852;
   cursor: pointer; }
 
@@ -333,7 +342,7 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 75px;
   background-color: #3e4852;
   color: #f2f2f2;
   font-size: 1.2rem;
@@ -386,7 +395,7 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
-  padding: 3rem;
+  padding: 3rem 1rem;
   background-color: #f0f3f4; }
 
 .product-display:nth-child(even) {
@@ -399,14 +408,17 @@ button:disabled {
   .product-display__details .product__title {
     margin-bottom: 1rem;
     font-size: 2rem;
-    font-weight: 400; }
+    font-weight: 600; }
   .product-display__details .product__content {
     margin-top: 0;
     font-size: 1.2rem; }
 
 .product-display__images {
   display: none;
-  text-align: center; }
+  text-align: right; }
+
+.product-display__images:nth-child(even) {
+  text-align: left; }
 
 .product-display__images img {
   justify-content: center;

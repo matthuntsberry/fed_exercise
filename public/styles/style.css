@@ -455,16 +455,27 @@ button:disabled {
 .overlay__container:hover .overlay {
   opacity: .7; }
 
-.text {
-  color: white;
-  font-size: 20px;
+.overlay__text {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  width: 100%;
   transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 20px;
   text-align: center; }
+
+.overlay__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0; }
+
+.overlay__hr {
+  width: 90%; }
+
+.overlay__content {
+  margin: 0;
+  font-size: 1.6rem; }
 
 @media (min-width: 767px) {
   .product-display {

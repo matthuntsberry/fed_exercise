@@ -3,10 +3,7 @@
   font-weight: 100;
   line-height: 1.6; }
 
-a {
-  color: #f2f2f2;
-  text-decoration: none; }
-
+a,
 a:visited {
   color: #f2f2f2;
   text-decoration: none; }
@@ -65,53 +62,6 @@ button:disabled {
     transform: translate(0);
     opacity: 1; } }
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 0.5rem 0 0 2rem;
-  background-color: #3e4852;
-  color: #f2f2f2;
-  font-size: 1.4rem; }
-  .header__logo {
-    width: 30px; }
-  .header__title {
-    display: inline;
-    margin: 0;
-    color: #f2f2f2; }
-    .header__title a {
-      padding-left: 2px;
-      font-weight: 400; }
-
-.branding {
-  display: flex;
-  align-items: center;
-  /* align vertical */ }
-
-.nav {
-  font-size: 1rem; }
-  .nav__content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    padding-right: 2rem;
-    list-style-type: none; }
-  .nav__item {
-    display: inline;
-    padding-right: 3rem; }
-  .nav__item--search {
-    width: 20px; }
-
-.hamburger {
-  display: none; }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .nav {
-    display: none; }
-  .hamburger {
-    display: inline-block; } }
-
 .nav-toggle {
   position: absolute;
   clip: rect(0, 0, 0, 0); }
@@ -155,10 +105,10 @@ button:disabled {
   font-size: 2rem;
   text-align: center; }
   .menu li {
+    display: inline-block;
     margin-bottom: 1.5em;
     font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block; }
+    text-transform: uppercase; }
     .menu li a {
       transition: all ease 0.8s;
       animation: moveInRight 1.5s ease-out;
@@ -351,33 +301,6 @@ button:disabled {
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 75px;
-  background-color: #3e4852;
-  color: #f2f2f2;
-  font-size: 1.2rem;
-  text-align: center; }
-  .footer__trademark {
-    margin: 0;
-    color: #69747b; }
-
-@media (min-width: 320px) and (max-width: 766px) {
-  .footer {
-    flex-direction: column; } }
-
-@media (min-width: 767px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between; }
-    .footer__branding {
-      padding-left: 2rem; }
-    .footer__trademark {
-      margin: 0;
-      padding-right: 2rem; } }
-
 .dream-car {
   display: grid;
   grid-gap: 1rem;
@@ -404,6 +327,53 @@ button:disabled {
     margin: 0 auto;
     padding: 3rem 20rem;
     background-color: #fff; } }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0.5rem 0 0 2rem;
+  background-color: #3e4852;
+  color: #f2f2f2;
+  font-size: 1.4rem; }
+  .header__logo {
+    width: 30px; }
+  .header__title {
+    display: inline;
+    margin: 0;
+    color: #f2f2f2; }
+    .header__title a {
+      padding-left: 2px;
+      font-weight: 400; }
+
+.branding {
+  display: flex;
+  align-items: center;
+  /* align vertical */ }
+
+.nav {
+  font-size: 1rem; }
+  .nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 2rem;
+    list-style-type: none; }
+  .nav__item {
+    display: inline;
+    padding-right: 3rem; }
+  .nav__item--search {
+    width: 20px; }
+
+.hamburger {
+  display: none; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none; }
+  .hamburger {
+    display: inline-block; } }
 
 .product-display {
   display: grid;
@@ -436,7 +406,8 @@ button:disabled {
 
 .product-display__images img {
   justify-content: center;
-  height: auto; }
+  height: auto;
+  padding-left: 1rem; }
 
 .overlay__container {
   display: inline-block;
@@ -453,8 +424,8 @@ button:disabled {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10px;
+  max-width: 96.5%;
   height: 98%;
   transition: .5s ease;
   opacity: 0;
@@ -490,3 +461,30 @@ button:disabled {
     grid-template-columns: 1fr 1fr; }
   .product-display__images {
     display: inline-block; } }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  background-color: #3e4852;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  text-align: center; }
+  .footer__trademark {
+    margin: 0;
+    color: #69747b; }
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .footer {
+    flex-direction: column; } }
+
+@media (min-width: 767px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between; }
+    .footer__branding {
+      padding-left: 2rem; }
+    .footer__trademark {
+      margin: 0;
+      padding-right: 2rem; } }

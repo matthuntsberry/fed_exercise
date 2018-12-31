@@ -18,7 +18,7 @@
 
   .product__title {
     margin-bottom: $s-size;
-    font-size: 2rem;
+    font-size: $m-font;
     font-weight: 600;
   }
   
@@ -35,12 +35,12 @@
 
 .product-display__images:nth-child(even) {  
   text-align: left;
-
 }
 
 .product-display__images img {
   justify-content: center;
   height: auto;
+  padding-left: $s-size;
 }
 
 .overlay__container {
@@ -61,8 +61,8 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10px;
+  max-width: 96.5%;
   height: 98%;
   transition: .5s ease;
   opacity: 0;

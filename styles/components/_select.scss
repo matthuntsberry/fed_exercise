@@ -2,10 +2,15 @@
 .custom-select {
   display: inline-block;
   position: relative;
+  z-index: 2;
   max-width: 200px;
   border-top: 1px solid #e7e9ea;
   color: $faint-blue;
   font-family: Arial;
+}
+
+.custom-select:hover {
+  border-top: 1px solid $blue-gray;
 }
 
 .custom-select select {
@@ -14,6 +19,10 @@
 
 .select-selected {
   background-color: $white;
+}
+
+.select-selected:hover {
+  border-color: $blue-gray;
 }
 
 /* Style the arrow inside the select element: */
@@ -25,7 +34,7 @@
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: $faint-blue transparent transparent;
+  border-color: $blue-gray transparent transparent;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
@@ -48,7 +57,6 @@
 /* Style items (options): */
 .select-items {
   position: absolute;
-  // z-index: 99;
   top: 100%;
   right: 0;
   left: 0;

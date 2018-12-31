@@ -8,14 +8,9 @@
   font-size: $s-font;
   text-align: center;
 
-  &__branding {
-    padding: 0 $m-size $s-size 0;
-  }
-  
   &__trademark {
     margin: 0;
-    padding-right: $m-size;
-    
+    color: rgb(105, 116, 123);
   }
 }
 
@@ -28,10 +23,17 @@
 @media (min-width: 767px) {
   .footer {
     flex-direction: row;
+    // align-items: center;
     justify-content: space-between;
 
     &__branding {
       padding-left: $m-size;
+    }
+
+    &__trademark {
+      margin: 0;
+      padding-right: $m-size;
+      
     }
   }
 }

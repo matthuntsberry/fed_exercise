@@ -290,10 +290,14 @@ button:disabled {
 .custom-select {
   display: inline-block;
   position: relative;
+  z-index: 2;
   max-width: 200px;
   border-top: 1px solid #e7e9ea;
   color: #e7e9ea;
   font-family: Arial; }
+
+.custom-select:hover {
+  border-top: 1px solid #3e4852; }
 
 .custom-select select {
   display: none;
@@ -301,6 +305,9 @@ button:disabled {
 
 .select-selected {
   background-color: #fff; }
+
+.select-selected:hover {
+  border-color: #3e4852; }
 
 /* Style the arrow inside the select element: */
 .select-selected::after {
@@ -311,7 +318,7 @@ button:disabled {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #e7e9ea transparent transparent; }
+  border-color: #3e4852 transparent transparent; }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active::after {
@@ -353,11 +360,9 @@ button:disabled {
   color: #f2f2f2;
   font-size: 1.2rem;
   text-align: center; }
-  .footer__branding {
-    padding: 0 2rem 1rem 0; }
   .footer__trademark {
     margin: 0;
-    padding-right: 2rem; }
+    color: #69747b; }
 
 @media (min-width: 320px) and (max-width: 766px) {
   .footer {
@@ -368,7 +373,10 @@ button:disabled {
     flex-direction: row;
     justify-content: space-between; }
     .footer__branding {
-      padding-left: 2rem; } }
+      padding-left: 2rem; }
+    .footer__trademark {
+      margin: 0;
+      padding-right: 2rem; } }
 
 .dream-car {
   display: grid;
@@ -466,9 +474,9 @@ button:disabled {
   text-align: center; }
 
 .overlay__title {
+  margin: 0;
   font-size: 2rem;
-  font-weight: 700;
-  margin: 0; }
+  font-weight: 700; }
 
 .overlay__hr {
   width: 90%; }
